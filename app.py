@@ -1,22 +1,50 @@
 import streamlit as st
-from parser.parser import parse_debug_flow
+import pandas as pd
+from parser.parser import analyze_debug
 
-st.title("FG Debug Analyzer")
+st.set_page_config(page_title="FG Debug Analyzer", layout="wide")
 
-uploaded_file = st.file_uploader("Upload debug flow", type=["txt"])
+st.title("🔥 FortiGate Debug Analyzer")
 
-if uploaded_file:
-    content = uploaded_file.read().decode("utf-8")
+st.markdown("Cole o debug flow abaixo para análise completa:")
 
-    st.subheader("Debug bruto")
-    st.text(content)
+debug_text = st.text_area("Debug Flow", height=300)
 
-    sessions = parse_debug_flow(content)
+if st.button("Analisar"):
 
-    st.subheader("Sessões encontradas")
-
-    if sessions:
-        for s in sessions:
-            st.write(s)
+    if not debug_text.strip():
+        st.warning("Cole um debug válido.")
     else:
-        st.warning("Nenhuma sessão encontrada")
+        result = analyze_debug(debug_text)
+
+        # 🔹 RESUMO
+        st.subheader("📊 Resumo da Sessão")
+
+        col1, col2, col3 = st.columns(3)
+
+        col1.metric("Origem", result.get("src_ip"))
+        col1.metric("Destino", result.get("dst_ip"))
+        col1.metric("Porta", result.get("dst_port"))
+
+        col2.metric("Entrada", result.get("in_intf"))
+        col2.metric("Saída", result.get("out_intf"))
+        col2.metric("Policy", result.get("policy"))
+
+        col3.metric("NAT", result.get("snat"))
+        col3.metric("Ação", result.get("action"))
+        col3.metric("NPU Offload", result.get("npu"))
+
+        # 🔹 DIAGNÓSTICO
+        st.subheader("🧠 Diagnóstico")
+
+        st.info(result.get("diagnosis"))
+
+        # 🔹 DETALHES
+        st.subheader("📋 Detalhes Técnicos")
+
+        df = pd.DataFrame(result.items(), columns=["Campo", "Valor"])
+        st.dataframe(df)
+
+        # 🔹 DEBUG BRUTO
+        st.subheader("📜 Debug Bruto")
+        st.text(debug_text)
