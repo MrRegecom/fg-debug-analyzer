@@ -22,7 +22,6 @@ if st.button("Analisar"):
 
     df = pd.DataFrame(sessions)
 
-    # Organização das colunas
     ordered_cols = [
         "sessionId",
         "traceIds",
@@ -49,28 +48,17 @@ if st.button("Analisar"):
 
     st.subheader("📋 Sessões encontradas")
 
-    # Filtros
     c1, c2, c3, c4 = st.columns(4)
 
-    src_filter = c1.selectbox(
-        "Filtrar por Source IP",
-        options=["Todos"] + sorted([x for x in df["sourceIP"].dropna().unique().tolist()])
-    )
+    src_options = sorted([x for x in df["sourceIP"].dropna().unique().tolist()]) if "sourceIP" in df else []
+    dst_options = sorted([x for x in df["destinationIP"].dropna().unique().tolist()]) if "destinationIP" in df else []
+    proto_options = sorted([x for x in df["protocolType"].dropna().unique().tolist()]) if "protocolType" in df else []
+    action_options = sorted([x for x in df["actionFinal"].dropna().unique().tolist()]) if "actionFinal" in df else []
 
-    dst_filter = c2.selectbox(
-        "Filtrar por Destination IP",
-        options=["Todos"] + sorted([x for x in df["destinationIP"].dropna().unique().tolist()])
-    )
-
-    proto_filter = c3.selectbox(
-        "Filtrar por Protocolo",
-        options=["Todos"] + sorted([x for x in df["protocolType"].dropna().unique().tolist()])
-    )
-
-    action_filter = c4.selectbox(
-        "Filtrar por Ação",
-        options=["Todos"] + sorted([x for x in df["actionFinal"].dropna().unique().tolist()])
-    )
+    src_filter = c1.selectbox("Filtrar por Source IP", options=["Todos"] + src_options)
+    dst_filter = c2.selectbox("Filtrar por Destination IP", options=["Todos"] + dst_options)
+    proto_filter = c3.selectbox("Filtrar por Protocolo", options=["Todos"] + proto_options)
+    action_filter = c4.selectbox("Filtrar por Ação", options=["Todos"] + action_options)
 
     if src_filter != "Todos":
         df = df[df["sourceIP"] == src_filter]
@@ -87,11 +75,11 @@ if st.button("Analisar"):
         st.warning("Nenhuma sessão corresponde aos filtros selecionados.")
         st.stop()
 
-    # Escolha da sessão
+    df = df.copy()
     df["sessionLabel"] = df.apply(
-        lambda row: f'{row.get("sourceIP","?")}:{row.get("sourcePort","?")} -> '
-                    f'{row.get("destinationIP","?")}:{row.get("destinationPort","?")} | '
-                    f'Policy {row.get("policyIdFinal","-")} | {row.get("actionFinal","-")}',
+        lambda row: f'{row.get("sourceIP", "?")}:{row.get("sourcePort", "?")} -> '
+                    f'{row.get("destinationIP", "?")}:{row.get("destinationPort", "?")} | '
+                    f'Policy {row.get("policyIdFinal", "-")} | {row.get("actionFinal", "-")}',
         axis=1
     )
 
