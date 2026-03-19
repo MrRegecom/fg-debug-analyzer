@@ -1,1 +1,219 @@
-FG200FT922949357-IOB-02 # id=65308 trace_id=1 func=print_pkt_detail line=5952 msg="vd-root:0 received a packet(proto=6, 10.222.31.7:34602->192.64.151.235:443) tun_id=0.0.0.0 from INSIDE. flag [S], seq 107441510, ack 0, win 64240" id=65308 trace_id=1 func=init_ip_session_common line=6152 msg="allocate a new session-530eecf1" id=65308 trace_id=1 func=iprope_dnat_check line=5484 msg="in-[INSIDE], out-[]" id=65308 trace_id=1 func=iprope_dnat_tree_check line=834 msg="len=0" id=65308 trace_id=1 func=iprope_dnat_check line=5509 msg="result: skb_flags-02000000, vid-0, ret-no-match, act-accept, flag-00000000" id=65308 trace_id=1 func=rpdb_srv_match_input line=1173 msg="Match policy routing id=2141650945: to 192.64.151.235 via ifindex-46" id=65308 trace_id=1 func=vf_ip_route_input_common line=2612 msg="find a route: flag=00000000 gw-187.8.238.65 via VIVO_1" id=65308 trace_id=1 func=__iprope_fwd_check line=806 msg="in-[INSIDE], out-[VIVO_1], skb_flags-02000000, vid-0, app_id: 0, url_cat_id: 0" id=65308 trace_id=1 func=__iprope_tree_check line=528 msg="gnum-100004, use int hash, slot=54, len=28" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-4294967295, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-172, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-76, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-2, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-157, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-177, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-178, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-158, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-77, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-88, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-89, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-90, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-90, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-87, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-87, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-132, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-132, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-30, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-110, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-110, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-113, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-113, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-114, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-114, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-115, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-115, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-1, ret-matched, act-accept" id=65308 trace_id=1 func=__iprope_user_identity_check line=1904 msg="ret-matched" id=65308 trace_id=1 func=__iprope_check line=2405 msg="gnum-4e25, check-ffffffffa002f630" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-4e25 policy-9, ret-matched, act-accept" id=65308 trace_id=1 func=__iprope_check_one_policy line=2375 msg="policy-9 is matched, act-accept" id=65308 trace_id=1 func=__iprope_check line=2422 msg="gnum-4e25 check result: ret-matched, act-accept, flag-00002000, flag2-00000000" id=65308 trace_id=1 func=get_new_addr line=1270 msg="find SNAT: IP-187.8.238.113(from IPPOOL), port-48270" id=65308 trace_id=1 func=__iprope_check_one_policy line=2375 msg="policy-1 is matched, act-accept" id=65308 trace_id=1 func=__iprope_fwd_check line=843 msg="after iprope_captive_check(): is_captive-0, ret-matched, act-accept, idx-1" id=65308 trace_id=1 func=iprope_fwd_auth_check line=872 msg="after iprope_captive_check(): is_captive-0, ret-matched, act-accept, idx-1" id=65308 trace_id=1 func=iprope_shaping_check line=970 msg="in-[INSIDE], out-[VIVO_1], skb_flags-02000000, vid-0" id=65308 trace_id=1 func=__iprope_check line=2405 msg="gnum-100015, check-ffffffffa002e220" id=65308 trace_id=1 func=__iprope_check_one_policy line=2141 msg="checked gnum-100015 policy-1, ret-no-match, act-accept" id=65308 trace_id=1 func=__iprope_check line=2422 msg="gnum-100015 check result: ret-no-match, act-accept, flag-00000000, flag2-00000000" id=65308 trace_id=1 func=iprope_policy_group_check line=4904 msg="after check: ret-no-match, act-accept, flag-00000000, flag2-00000000" id=65308 trace_id=1 func=__iprope_check line=2405 msg="gnum-100016, check-ffffffffa002f630" id=65308 trace_id=1 func=iprope_policy_group_check line=4904 msg="after check: ret-no-match, act-accept, flag-00000000, flag2-00000000" id=65308 trace_id=1 func=iprope_reverse_dnat_check line=1349 msg="in-[INSIDE], out-[VIVO_1], skb_flags-02000000, vid-0" id=65308 trace_id=1 func=iprope_reverse_dnat_tree_check line=926 msg="len=0" id=65308 trace_id=1 func=fw_forward_handler line=992 msg="Allowed by Policy-1: SNAT" id=65308 trace_id=1 func=__ip_session_run_tuple line=3482 msg="SNAT 10.222.31.7->187.8.238.113:48270" id=65308 trace_id=1 func=np6xlite_hif_nturbo_build_vtag line=1250 msg="vtag->magic d153beef, vtag->coretag 65, vtag->vid 200 vtag->sip[0] 71ee08bb, vtag->sip[1] 0, vtag->sip[2] 0, vtag->sip[3] 0 vtag->sport 36540, vtag->mtu 1500, vtag->flags 12, vtag->np6_flag 0x0, skb->npu_flag=0xc0880" id=65308 trace_id=2 func=print_pkt_detail line=5952 msg="vd-root:0 received a packet(proto=6, 10.222.31.7:34602->192.64.151.235:443) tun_id=0.0.0.0 from INSIDE. flag [.], seq 107441511, ack 1139233738, win 502" id=65308 trace_id=2 func=resolve_ip_tuple_fast line=6054 msg="Find an existing session, id-530eecf1, original direction" id=65308 trace_id=2 func=npu_handle_session44 line=1242 msg="Trying to offloading session from INSIDE to VIVO_1, skb.npu_flag=00000400 ses.state=04012200 ses.npu_state=0x00003894" id=65308 trace_id=2 func=np6xlite_fos_set_nturbo_ips_fwd_session line=630 msg="push nturbo session oid 16" id=65308 trace_id=2 func=ip_session_install_npu_session line=368 msg="npu session installation succeeded" id=65308 trace_id=2 func=fw_forward_dirty_handler line=442 msg="state=04012200, state2=00000300, npu_state=00003c94" id=65308 trace_id=2 func=__ip_session_run_tuple line=3482 msg="SNAT 10.222.31.7->187.8.238.113:48270" id=65308 trace_id=2 func=np6xlite_hif_nturbo_build_vtag line=1250 msg="vtag->magic d153beef, vtag->coretag 65, vtag->vid 200 vtag->sip[0] 71ee08bb, vtag->sip[1] 0, vtag->sip[2] 0, vtag->sip[3] 0 vtag->sport 36540, vtag->mtu 1500, vtag->flags 2, vtag->np6_flag 0x0, skb->npu_flag=0xc0c80" id=65308 trace_id=3 func=print_pkt_detail line=5952 msg="vd-root:0 received a packet(proto=6, 10.222.31.7:34602->192.64.151.235:443) tun_id=0.0.0.0 from INSIDE. flag [.], seq 107442028, ack 1139236160, win 484" id=65308 trace_id=3 func=resolve_ip_tuple_fast line=6054 msg="Find an existing session, id-530eecf1, original direction" id=65308 trace_id=3 func=__iprope_fwd_check line=806 msg="in-[INSIDE], out-[VIVO_1], skb_flags-02000000, vid-0, app_id: 47013, url_cat_id: 0" id=65308 trace_id=3 func=__iprope_tree_check line=528 msg="gnum-100004, use int hash, slot=54, len=28" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-4294967295, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-172, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-76, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-2, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-157, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-177, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-178, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-158, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-77, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-88, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-89, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-90, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-90, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-87, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-87, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-132, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-132, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-30, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-110, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-110, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-113, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-113, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-114, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-114, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-115, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-115, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100004 policy-1, ret-matched, act-accept" id=65308 trace_id=3 func=__iprope_user_identity_check line=1904 msg="ret-matched" id=65308 trace_id=3 func=__iprope_check line=2405 msg="gnum-4e25, check-ffffffffa002f630" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-4e25 policy-9, ret-matched, act-accept" id=65308 trace_id=3 func=__iprope_check_one_policy line=2375 msg="policy-9 is matched, act-accept" id=65308 trace_id=3 func=__iprope_check line=2422 msg="gnum-4e25 check result: ret-matched, act-accept, flag-00002000, flag2-00000000" id=65308 trace_id=3 func=get_new_addr line=1270 msg="find SNAT: IP-187.8.238.113(from IPPOOL), port-48293" id=65308 trace_id=3 func=__iprope_check_one_policy line=2375 msg="policy-1 is matched, act-accept" id=65308 trace_id=3 func=__iprope_fwd_check line=843 msg="after iprope_captive_check(): is_captive-0, ret-matched, act-accept, idx-1" id=65308 trace_id=3 func=__iprope_check line=2405 msg="gnum-100016, check-ffffffffa002f630" id=65308 trace_id=3 func=iprope_policy_group_check line=4904 msg="after check: ret-no-match, act-accept, flag-00000000, flag2-00000000" id=65308 trace_id=3 func=iprope_reverse_dnat_check line=1349 msg="in-[INSIDE], out-[VIVO_1], skb_flags-02000000, vid-0" id=65308 trace_id=3 func=iprope_reverse_dnat_tree_check line=926 msg="len=0" id=65308 trace_id=3 func=iprope_shaping_check line=970 msg="in-[INSIDE], out-[VIVO_1], skb_flags-02000000, vid-0" id=65308 trace_id=3 func=__iprope_check line=2405 msg="gnum-100015, check-ffffffffa002e220" id=65308 trace_id=3 func=__iprope_check_one_policy line=2141 msg="checked gnum-100015 policy-1, ret-no-match, act-accept" id=65308 trace_id=3 func=__iprope_check line=2422 msg="gnum-100015 check result: ret-no-match, act-accept, flag-00000000, flag2-00000000" id=65308 trace_id=3 func=iprope_policy_group_check line=4904 msg="after check: ret-no-match, act-accept, flag-00000000, flag2-00000000" id=65308 trace_id=3 func=__ip_session_run_tuple line=3482 msg="SNAT 10.222.31.7->187.8.238.113:48270" id=65308 trace_id=3 func=np6xlite_hif_nturbo_build_vtag line=1250 msg="vtag->magic d153beef, vtag->coretag 65, vtag->vid 200 vtag->sip[0] 71ee08bb, vtag->sip[1] 0, vtag->sip[2] 0, vtag->sip[3] 0 vtag->sport 36540, vtag->mtu 1500, vtag->flags 2, vtag->np6_flag 0x0, skb->npu_flag=0xc0c80" id=65308 trace_id=4 func=print_pkt_detail line=5952 msg="vd-root:0 received a packet(proto=6, 10.222.31.7:34602->192.64.151.235:443) tun_id=0.0.0.0 from INSIDE. flag [.], seq 107442028, ack 1139236160, win 484" id=65308 trace_id=4 func=resolve_ip_tuple_fast line=6054 msg="Find an existing session, id-530eecf1, original direction" id=65308 trace_id=4 func=npu_handle_session44 line=1242 msg="Trying to offloading session from INSIDE to VIVO_1, skb.npu_flag=00000400 ses.state=04012204 ses.npu_state=0x00003c94" id=65308 trace_id=4 func=np6xlite_fos_set_nturbo_ips_fwd_session line=630 msg="push nturbo session oid 16" id=65308 trace_id=4 func=ip_session_install_npu_session line=368 msg="npu session installation succeeded" id=65308 trace_id=4 func=fw_forward_dirty_handler line=442 msg="state=04012204, state2=00004300, npu_state=00003c94" id=65308 trace_id=4 func=__ip_session_run_tuple line=3482 msg="SNAT 10.222.31.7->187.8.238.113:48270" id=65308 trace_id=4 func=np6xlite_hif_nturbo_build_vtag line=1250 msg="vtag->magic d153beef, vtag->coretag 65, vtag->vid 200 vtag->sip[0] 71ee08bb, vtag->sip[1] 0, vtag->sip[2] 0, vtag->sip[3] 0 vtag->sport 36540, vtag->mtu 1500, vtag->flags 2, vtag->np6_flag 0x0, skb->npu_flag=0xc0c80" id=65308 trace_id=5 func=print_pkt_detail line=5952 msg="vd-root:0 received a packet(proto=6, 10.222.31.7:34602->192.64.151.235:443) tun_id=0.0.0.0 from INSIDE. flag [F.], seq 107442351, ack 1139243426, win 609" id=65308 trace_id=5 func=resolve_ip_tuple_fast line=6054 msg="Find an existing session, id-530eecf1, original direction" id=65308 trace_id=5 func=npu_handle_session44 line=1242 msg="Trying to offloading session from INSIDE to VIVO_1, skb.npu_flag=00000000 ses.state=04012204 ses.npu_state=0x00003c94" id=65308 trace_id=5 func=fw_forward_dirty_handler line=442 msg="state=04012204, state2=00004300, npu_state=00003c94" id=65308 trace_id=5 func=__ip_session_run_tuple line=3482 msg="SNAT 10.222.31.7->187.8.238.113:48270" id=65308 trace_id=5 func=np6xlite_hif_nturbo_build_vtag line=1250 msg="vtag->magic d153beef, vtag->coretag 65, vtag->vid 200 vtag->sip[0] 71ee08bb, vtag->sip[1] 0, vtag->sip[2] 0, vtag->sip[3] 0 vtag->sport 36540, vtag->mtu 1500, vtag->flags 2, vtag->np6_flag 0x0, skb->npu_flag=0xc0880"
+import re
+from collections import defaultdict
+
+
+PROTO_MAP = {
+    "6": "TCP",
+    "17": "UDP",
+    "1": "ICMP",
+}
+
+
+def clean_value(value: str | None) -> str | None:
+    if value is None:
+        return None
+    return value.strip().strip(' ."[]')
+
+
+def proto_name(proto_num: str) -> str:
+    return PROTO_MAP.get(str(proto_num), f"PROTO-{proto_num}")
+
+
+def normalize_debug_text(text: str) -> list[str]:
+    """
+    Normaliza logs colados em uma única linha, quebrando antes de cada bloco id=... trace_id=...
+    """
+    text = text.replace("\r", " ")
+    text = re.sub(r"\s+(?=id=\d+\s+trace_id=\d+\s+func=)", "\n", text)
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    return lines
+
+
+def build_empty_record() -> dict:
+    return {
+        "sessionId": None,
+        "traceIds": set(),
+        "sourceIP": None,
+        "sourcePort": None,
+        "destinationIP": None,
+        "destinationPort": None,
+        "protocolType": None,
+        "sourceInterface": None,
+        "destinationInterface": None,
+        "gateway": None,
+        "finalRoute": None,
+        "policyIdFinal": None,
+        "policyRouteId": None,
+        "natType": "NONE",
+        "snatIP": None,
+        "dnatMatched": False,
+        "actionFinal": None,
+        "vdom": None,
+        "npuOffload": "No",
+        "tcpFlags": None,
+        "diagnosis": "Análise incompleta",
+    }
+
+
+def get_or_create_record(trace_id: str, trace_map: dict, session_map: dict) -> dict:
+    if trace_id in trace_map:
+        return trace_map[trace_id]
+
+    rec = build_empty_record()
+    trace_map[trace_id] = rec
+    return rec
+
+
+def finalize_record(rec: dict) -> dict:
+    rec["traceIds"] = ", ".join(sorted(rec["traceIds"], key=lambda x: int(x))) if rec["traceIds"] else None
+
+    # Final route amigável
+    if rec.get("gateway") and rec.get("destinationInterface"):
+        rec["finalRoute"] = f'{rec["gateway"]} via {rec["destinationInterface"]}'
+    elif rec.get("gateway"):
+        rec["finalRoute"] = rec["gateway"]
+    elif rec.get("destinationInterface"):
+        rec["finalRoute"] = rec["destinationInterface"]
+
+    # NAT type
+    if rec.get("snatIP") and rec.get("dnatMatched"):
+        rec["natType"] = "SNAT+DNAT"
+    elif rec.get("snatIP"):
+        rec["natType"] = "SNAT"
+    elif rec.get("dnatMatched"):
+        rec["natType"] = "DNAT"
+    else:
+        rec["natType"] = "NONE"
+
+    # Diagnosis
+    if rec["actionFinal"] == "DENY":
+        rec["diagnosis"] = "Bloqueado por firewall policy"
+    elif rec["actionFinal"] == "ACCEPT":
+        rec["diagnosis"] = "Tráfego permitido pelo firewall; se falhar, investigar Security Logs, DNS ou aplicação"
+    elif rec["sourceIP"] and not rec["destinationInterface"]:
+        rec["diagnosis"] = "Tráfego chegou ao firewall, mas não foi encontrada rota/interface de saída"
+    elif rec["sourceIP"] and not rec["policyIdFinal"]:
+        rec["diagnosis"] = "Tráfego chegou ao firewall, mas nenhuma policy final foi identificada"
+    else:
+        rec["diagnosis"] = "Análise incompleta"
+
+    return rec
+
+
+def parse_debug_sessions(text: str) -> list[dict]:
+    lines = normalize_debug_text(text)
+
+    trace_map: dict[str, dict] = {}
+    session_map: dict[str, dict] = {}
+
+    for line in lines:
+        trace_m = re.search(r"trace_id=(\d+)", line)
+        if not trace_m:
+            continue
+
+        trace_id = trace_m.group(1)
+        rec = get_or_create_record(trace_id, trace_map, session_map)
+        rec["traceIds"].add(trace_id)
+
+        # VDOM / pacote inicial / interfaces / flags / protocolo / IPs / portas
+        pkt = re.search(
+            r'received a packet\(proto=(\d+),\s*'
+            r'(\d+\.\d+\.\d+\.\d+):(\d+)->(\d+\.\d+\.\d+\.\d+):(\d+)'
+            r'.*?from\s+([A-Za-z0-9_\-\.]+)\.\s*flag\s+\[([^\]]+)\]',
+            line
+        )
+        if pkt:
+            rec["protocolType"] = proto_name(pkt.group(1))
+            rec["sourceIP"] = pkt.group(2)
+            rec["sourcePort"] = pkt.group(3)
+            rec["destinationIP"] = pkt.group(4)
+            rec["destinationPort"] = pkt.group(5)
+            rec["sourceInterface"] = clean_value(pkt.group(6))
+            rec["tcpFlags"] = pkt.group(7)
+
+        # VDOM
+        vdom_m = re.search(r'vd-([A-Za-z0-9_\-]+):', line)
+        if vdom_m:
+            rec["vdom"] = clean_value(vdom_m.group(1))
+
+        # Session allocation
+        sess_new = re.search(r'allocate a new session-([A-Za-z0-9]+)', line)
+        if sess_new:
+            sid = sess_new.group(1)
+            rec["sessionId"] = sid
+            session_map[sid] = rec
+
+        # Existing session association
+        sess_existing = re.search(r'Find an existing session,\s*id-([A-Za-z0-9]+)', line)
+        if sess_existing:
+            sid = sess_existing.group(1)
+            if sid in session_map:
+                # reaponta este trace_id para o mesmo registro
+                trace_map[trace_id] = session_map[sid]
+                rec = session_map[sid]
+                rec["traceIds"].add(trace_id)
+                rec["sessionId"] = sid
+
+        # Policy route
+        policy_route = re.search(r'Match policy routing id=(\d+):.*?via\s+([A-Za-z0-9_\-\.]+)', line)
+        if policy_route:
+            rec["policyRouteId"] = policy_route.group(1)
+            candidate = clean_value(policy_route.group(2))
+            # Não usar ifindex como interface final amigável
+            if candidate and not candidate.startswith("ifindex-"):
+                rec["destinationInterface"] = candidate
+
+        # Final route + gateway
+        route = re.search(r'find a route:.*?gw-(\d+\.\d+\.\d+\.\d+)\s+via\s+([A-Za-z0-9_\-\.]+)', line)
+        if route:
+            rec["gateway"] = route.group(1)
+            candidate = clean_value(route.group(2))
+            if candidate and not candidate.startswith("ifindex-"):
+                rec["destinationInterface"] = candidate
+
+        # Preferir out-[INTERFACE]
+        out_if = re.search(r'out-\[([^\]]+)\]', line)
+        if out_if:
+            rec["destinationInterface"] = clean_value(out_if.group(1))
+
+        # DNAT detection
+        if "iprope_dnat_check" in line and "ret-matched" in line:
+            rec["dnatMatched"] = True
+        if "DNAT" in line:
+            rec["dnatMatched"] = True
+
+        # Policy matched final
+        allowed = re.search(r'Allowed by Policy-(\d+)', line)
+        if allowed:
+            rec["policyIdFinal"] = allowed.group(1)
+            rec["actionFinal"] = "ACCEPT"
+
+        deny = re.search(r'Denied by forward policy check', line)
+        if deny:
+            rec["actionFinal"] = "DENY"
+
+        # Fallback: pega policy matched se ainda não tiver a final
+        if rec["policyIdFinal"] is None:
+            pol_match = re.search(r'policy-(\d+)\s+is matched,\s*act-accept', line)
+            if pol_match:
+                rec["policyIdFinal"] = pol_match.group(1)
+
+        # SNAT
+        snat = re.search(r'SNAT\s+\d+\.\d+\.\d+\.\d+->(\d+\.\d+\.\d+\.\d+):(\d+)', line)
+        if snat:
+            rec["snatIP"] = snat.group(1)
+
+        # NPU
+        if "npu session installation succeeded" in line:
+            rec["npuOffload"] = "Yes"
+
+    # Deduplicar por object id do registro
+    unique_records = []
+    seen_ids = set()
+    for rec in trace_map.values():
+        oid = id(rec)
+        if oid not in seen_ids:
+            seen_ids.add(oid)
+            unique_records.append(finalize_record(rec))
+
+    return unique_records
